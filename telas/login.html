@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Vaso Automatizado Maker</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Ficheiro de Estilo do Login -->
+    <link rel="stylesheet" href="../estilos/login.css">
+</head>
+<body>
+
+    <main class="login-container">
+        <div class="login-card">
+            <!-- Logo na tela -->
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> EcoVaso <span>Maker</span>
+            </div>
+
+            <h2>Acesse a sua conta</h2>
+            <p class="subtitle">Insira as suas credenciais para gerir o seu vaso inteligente</p>
+
+            <!-- Formulário de Login -->
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="username">Nome de Usuário</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" placeholder="Digite seu usuário" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    <i class="fa-solid fa-right-to-bracket"></i> Entrar
+                </button>
+            </form>
+
+            <!-- Chamada e Botão para Tela de Cadastro -->
+            <div class="register-callout">
+                <p>Ainda não tem uma conta?</p>
+                <a href="cadastro.html" class="btn-register">
+                    <i class="fa-solid fa-user-plus"></i> Criar nova conta
+                </a>
+            </div>
+
+            <div class="login-footer">
+                <p><a href="inicio.html"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script de validação e controle -->
+    <script src="../scripts/login.js"></script>
+</body>
+</html>
